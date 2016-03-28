@@ -35,9 +35,9 @@ def parse_json(data):
     return d
 
 def send_text(my_str, to_phone):
-    phone_num = "+19782777642"
-    account_sid = "AC8809125b1779b4fc3b272e334ce5c05c"
-    auth_token = "41b42845c2ccf8556b1041342092d6d6"
+    phone_num = "PHONE-NUMBER"
+    account_sid = "ACCOUNT-SID"
+    auth_token = "AUTH-SID"
     client = TwilioRestClient(account_sid, auth_token)
     message = client.messages.create(to=to_phone, from_= phone_num,
                                                  body=my_str)
